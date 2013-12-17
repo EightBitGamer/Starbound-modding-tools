@@ -1,26 +1,36 @@
 package start;
 
-import java.awt.Dimension;
+import io.github.EightBitGamer.Starbound.moddingTools.StarboundModdingToolsFileManager;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JFrame;
-//import javax.swing.JLabel;
+import javax.swing.JInternalFrame;
+import javax.swing.JList;
+
 
 public class StarboundModdingTools{
 
+	public StarboundModdingToolsFileManager fileManager = new StarboundModdingToolsFileManager();
+	public JFrame jframe;
 	public static void main(String[] args){
-		createWindow();
+		
 	}
 	
-	public static void createWindow(){
-		JFrame jframe = new JFrame("StarboundModdingTools - EightBitGamer");
-		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		JLabel jlabel = new JLabel("Starbound Modding Tools - EightBitGamer");
-//		jframe.getContentPane().add(jlabel);
+	public void createJFrame(){
+		jframe = new JFrame("Starbound Modding Tools - EightBitGamer");
 		
-		Dimension dimensions = new Dimension(600, 480);
-		jframe.setSize(dimensions);
 		
-		jframe.pack();
-		jframe.setVisible(true);
+		jframe.getContentPane();
+	}
+	
+	public void refreshList(){
+		List<String> list = new ArrayList<String>();
+		JList jlist = new JList();
+	}
+	
+	public JInternalFrame getJsonEditor(){
+		return new JInternalFrame();
 	}
 }

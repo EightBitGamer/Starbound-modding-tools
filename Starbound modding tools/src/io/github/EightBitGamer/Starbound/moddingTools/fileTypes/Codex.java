@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Codex{
 
+	public String[] varsTypes = {"String|1|id", "String|1|title", "String|-1|pages"};
 	public String id;
 	public String title;
 	public List<String> pages;
